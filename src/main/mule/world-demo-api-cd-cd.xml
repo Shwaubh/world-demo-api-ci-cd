@@ -28,7 +28,7 @@ output application/json
 ---
 payload ++
 {
-	"message": "Success"
+	"message": "Success Message"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
