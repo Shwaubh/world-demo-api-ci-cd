@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:request-config>
 	<flow name="world-demo-api-cd-cdFlow" doc:id="fd9d56e6-9640-4d24-b6b3-c0e74e90eba9" >
 		<http:listener doc:name="Listener" doc:id="cc64c5d6-6e25-4d91-a655-c3b07b32b4a7" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
-		<http:request method="GET" doc:name="Request" doc:id="31e40b14-a085-4e0b-a118-a4c83ffae6bf" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
+		<http:request method="GET" doc:name="Request to WorldTimeZone APi" doc:id="31e40b14-a085-4e0b-a118-a4c83ffae6bf" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
 {
